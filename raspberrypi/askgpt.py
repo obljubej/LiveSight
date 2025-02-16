@@ -65,7 +65,7 @@ def transcribe_audio(filename):
 def query_gpt(prompt):
     print("Sending prompt to GPT...")
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are an assistant."},
             {"role": "user", "content": "You are displaying to a small screen so keep the answers to less than 20 words: " + prompt}
